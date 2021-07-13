@@ -1,6 +1,31 @@
-# web-service-and-client-pharmacy
-Web Service en JAVA, con clientes JAVA y .NET
+# App Fullstack para la farmacia de Universidad Mariano Galvez de Guatemala
+Web Service en JAVA, con clientes JAVA y .NET Frameworks
 
-![](My_Video_333.gif)
+API
+El sistema backend fue creado con la tecnologia JAVA EE 8, JDK 1.8 actualizacion 221.
+## El sistema es capaz de:
+* Adquirir los medicamentos de la base de datos(segun requerimiento de los clientes)
+* Realizar actualizacion de inventario en caso de compra de medicamentos
+* Insercion de inventario por medio de archivo .CSV
+* Generacion de factura
 
-![](mivideo333.gif)
+Cliente Java
+El cliente JAVA fue creado con la tecnologia JAVA EE 8, con funciones de Servlets, Java Server Pages.
+## El cliente JAVA cuenta con las funciones de:
+* Interfaz web 
+* Muestra de medicamentos
+* Busqueda de medicamentos por codigo
+* Busqueda de medicamentos por nombre
+* Busqueda de medicamentos por laboratorio farmaceutico
+* Venta de medicamentos
+* * Generacion de factura
+
+Cliente .NET Frameworks
+El cliente .NET Frameworks fue creado con la tecnologia .Net Frameworks 4.8.
+## El cliente JAVA cuenta con las funciones de:
+* Interfaz web 
+* Muestra de medicamentos
+* Busqueda de medicamentos por codigo
+* Busqueda de medicamentos por nombre
+* Busqueda de medicamentos por laboratorio farmaceutico
+* Venta de medicamentos
