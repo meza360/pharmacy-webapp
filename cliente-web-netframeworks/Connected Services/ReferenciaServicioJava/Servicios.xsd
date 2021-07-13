@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://ModeloServicio/" targetNamespace="http://ModeloServicio/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Actualizar" type="tns:Actualizar" />
+  <xs:element name="ActualizarResponse" type="tns:ActualizarResponse" />
+  <xs:element name="Eliminar" type="tns:Eliminar" />
+  <xs:element name="EliminarResponse" type="tns:EliminarResponse" />
+  <xs:element name="agregar" type="tns:agregar" />
+  <xs:element name="agregarResponse" type="tns:agregarResponse" />
+  <xs:element name="insertarArchivo" type="tns:insertarArchivo" />
+  <xs:element name="insertarArchivoResponse" type="tns:insertarArchivoResponse" />
+  <xs:element name="listarLaboratorio" type="tns:listarLaboratorio" />
+  <xs:element name="listarLaboratorioResponse" type="tns:listarLaboratorioResponse" />
+  <xs:element name="listarMedicamentos" type="tns:listarMedicamentos" />
+  <xs:element name="listarMedicamentosResponse" type="tns:listarMedicamentosResponse" />
+  <xs:element name="listarNombre" type="tns:listarNombre" />
+  <xs:element name="listarNombreResponse" type="tns:listarNombreResponse" />
+  <xs:element name="listarcodigo" type="tns:listarcodigo" />
+  <xs:element name="listarcodigoResponse" type="tns:listarcodigoResponse" />
+  <xs:element name="ventaActualizar" type="tns:ventaActualizar" />
+  <xs:element name="ventaActualizarResponse" type="tns:ventaActualizarResponse" />
+  <xs:complexType name="ventaActualizar">
+    <xs:sequence>
+      <xs:element name="Codigo" type="xs:int" />
+      <xs:element name="Cantidad" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ventaActualizarResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="insertarArchivo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="rutaArchivo" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="insertarArchivoResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="Eliminar">
+    <xs:sequence>
+      <xs:element name="Codigo" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="EliminarResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:medicamento" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="medicamento">
+    <xs:sequence>
+      <xs:element name="cantidad_existencia" type="xs:int" />
+      <xs:element name="codigo" type="xs:int" />
+      <xs:element minOccurs="0" name="dosis" type="xs:string" />
+      <xs:element minOccurs="0" name="laboratorio_farmaceutico" type="xs:string" />
+      <xs:element minOccurs="0" name="medicamento" type="xs:string" />
+      <xs:element name="precio_unitario" type="xs:double" />
+      <xs:element minOccurs="0" name="presentacion" type="xs:string" />
+      <xs:element minOccurs="0" name="vencimiento" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarMedicamentos">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="listarMedicamentosResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:medicamento" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="Actualizar">
+    <xs:sequence>
+      <xs:element name="Codigo" type="xs:int" />
+      <xs:element minOccurs="0" name="Medicamento" type="xs:string" />
+      <xs:element minOccurs="0" name="Dosis" type="xs:string" />
+      <xs:element name="Precio_unitario" type="xs:double" />
+      <xs:element name="Cantidad_existencia" type="xs:int" />
+      <xs:element minOccurs="0" name="Laboratorio_farmaceutico" type="xs:string" />
+      <xs:element minOccurs="0" name="Vencimiento" type="xs:string" />
+      <xs:element minOccurs="0" name="Presentacion" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ActualizarResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarcodigo">
+    <xs:sequence>
+      <xs:element name="Codigo" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarcodigoResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:medicamento" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="agregar">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Medicamento" type="xs:string" />
+      <xs:element minOccurs="0" name="Dosis" type="xs:string" />
+      <xs:element name="Precio_unitario" type="xs:double" />
+      <xs:element name="Cantidad_existencia" type="xs:int" />
+      <xs:element minOccurs="0" name="Laboratorio_farmaceutico" type="xs:string" />
+      <xs:element minOccurs="0" name="Vencimiento" type="xs:string" />
+      <xs:element minOccurs="0" name="Presentacion" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="agregarResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarNombre">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="nombreMedicamento" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarNombreResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:medicamento" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarLaboratorio">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="LaboratorioFarmaceutico" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarLaboratorioResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:medicamento" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

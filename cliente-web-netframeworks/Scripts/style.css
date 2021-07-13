@@ -1,0 +1,470 @@
+body {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+header {
+	width: 100%;
+	backdrop-filter: blur(15px);
+}
+
+h1 {
+	background-blend-mode: darken;
+	color: black;
+	padding: 5%;
+}
+h2 {
+	text-align: center;
+}
+
+label {
+	font-size: medium;
+	font-weight: bold;
+}
+
+.busqueda {
+	border-radius: 50%;
+	align-items: center;
+	text-align: center;
+	backdrop-filter: opacity(10px);
+	padding: 5%;
+}
+
+form {
+	padding-top: 1%;
+	padding-bottom: 1%;
+	background-color: white;
+}
+
+section {
+	padding-top: 2%;
+	background-image: url("images/farmacia.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+.nav {
+	padding: 1%;
+	background-color: lightblue;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+}
+
+li {
+	padding: 2%;
+}
+
+li:hover {
+	border-style: solid 2px;
+	border-radius: 50%;
+	background-color: cornsilk;
+}
+
+.normal-slider .slick-prev,
+.normal-slider .slick-next {
+	width: 40px;
+	height: 40px;
+	z-index: 1;
+	opacity: 0;
+	transition: .5s;
+	background: rgba(255, 111, 97, .7);
+	border-radius: 4px;
+}
+
+.normal-slider .slick-prev {
+	left: 55px;
+}
+
+.normal-slider .slick-next {
+	right: 55px;
+}
+
+.normal-slider.slick-slider:hover .slick-prev {
+	left: 15px;
+	opacity: 1;
+}
+
+.normal-slider.slick-slider:hover .slick-next {
+	right: 15px;
+	opacity: 1;
+}
+
+.normal-slider .slick-prev:hover,
+.normal-slider .slick-prev:focus,
+.normal-slider .slick-next:hover,
+.normal-slider .slick-next:focus {
+	background: rgba(0, 0, 0, .7);
+}
+
+.normal-slider .slick-prev:hover::before,
+.normal-slider .slick-prev:focus::before,
+.normal-slider .slick-next:hover::before,
+.normal-slider .slick-next:focus::before {
+	color: #ff6f61;
+}
+
+.normal-slider .slick-prev::before,
+.normal-slider .slick-next::before {
+	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
+	font-size: 30px;
+	color: #ffffff;
+}
+
+.normal-slider .slick-prev::before {
+	content: "\f104";
+}
+
+.normal-slider .slick-next::before {
+	content: "\f105";
+}
+
+.normal-slider .slick-dots {
+	bottom: 15px;
+}
+
+.normal-slider .slick-dots li button:before {
+	color: #ffffff;
+	font-size: 15px;
+}
+
+.normal-slider .slick-dots li.slick-active button:before {
+	color: #ff6f61;
+}
+
+.slick-dotted.slick-slider {
+	margin-bottom: 0;
+}
+
+/* 
+seccion estilo del mapa
+*/
+
+.contact-map {
+	width: 90%;
+	height: 50%;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+iframe {
+	border: 3px solid black;
+	width: 90%;
+	height: 600px;
+	margin: 2%;
+}
+
+/*
+seccion de la pagina de contacto
+*/
+
+main {
+	backdrop-filter: blur(50px);
+	margin-top: 2%;
+	margin-bottom: 2%;
+}
+
+.contact-div {
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	align-items: left;
+	justify-content: space-between;
+}
+
+.contact-section {
+	background-image: url("images/farm2.jpeg");
+	margin: 2%;
+	padding: 2%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	margin: 5px 2px;
+}
+
+.contact-address ul li {
+	margin-top: 5%;
+	margin-block: 10%;
+}
+
+.contact-address {
+	border: 1px solid black;
+	border-radius: 20px;
+	align-items: center;
+	background-color: white;
+	width: 80%;
+	height: 50%;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+.contact-div-2 {
+	padding: 5%;
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	margin: 5px 5px;
+}
+
+.contact-form {
+	border: 2px solid black;
+	border-radius: 20px;
+	align-items: center;
+	background-color: white;
+	width: 100%;
+	height: fit-content;
+	padding: 20px;
+}
+
+.contact-form:hover {
+	transition-duration: 0.5s;
+	transition-delay: 0s;
+	transition-timing-function: ease-in-out;
+	border-radius: 20px;
+	transform: translate3d(20px, -20px, -20px);
+}
+
+.contact-form label {
+	margin: 5% 2%;
+	width: 30%;
+	display: inline-block;
+	text-align: left;
+}
+
+.contact-form .txtAreas {
+	border: 1px solid;
+	width: 60%;
+}
+
+.contact-form .txtAreas:hover {
+	box-shadow: 2px 2px 5px rgb(41, 114, 182);
+	color: rgb(41, 114, 182);
+}
+
+.contact-form .btn {
+	width: 90%;
+	text-align: center;
+	align-items: center;
+	display: flexbox;
+	flex-direction: column;
+	margin-top: 2%;
+}
+
+.contact-form textarea {
+	resize: none;
+}
+
+.bullet label {
+	text-align: left;
+}
+.bullet img {
+	filter: grayscale(100%);
+	background-color: white;
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+}
+
+.bullet:hover {
+	background-color: transparent;
+}
+
+.carrito {
+	padding: 5%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.botones {
+	align-items: center;
+}
+
+.boton {
+	border-color: black;
+	padding: 2%;
+	margin: 10%;
+	display: block;
+	color: black;
+	background-color: white;
+	border-radius: 10px;
+}
+
+.boton:hover {
+	border-color: black;
+	color: black;
+	background-color: white;
+	-webkit-transition: 0.2s;
+	-webkit-transform: translatex(10px);
+}
+
+.carta {
+	background-color: white;
+	font-family: 'Times New Roman', Times, serif;
+	font-size: 18px;
+	font-weight: bold;
+	border-radius: 20%;
+	width: 30%;
+	height: 450px;
+	border: 5px solid;
+}
+
+.med {
+	background-color: whitesmoke;
+	align-items: center;
+	width: fit-content;
+}
+.informacion {
+	background-color: whitesmoke;
+	align-items: center;
+}
+.checkout {
+	padding: 1%;
+	background-color: whitesmoke;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+/*
+elementos especificos de nosotros.html
+*/
+.nosotros-div1 {
+	margin: 45px;
+	padding: 2px;
+	background-image: none;
+}
+
+.nosotros1 {
+	background-image: url("images/nosotros1.png");
+	backdrop-filter: blur(10px);
+	background-size: cover;
+	min-height: 500px;
+}
+
+.nosotros1 p {
+	min-height: 50%;
+	text-align: justify;
+	font-size: xx-large;
+	font-weight: bold;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.nosotros1 h2 {
+	min-height: 50%;
+	text-align: center;
+	font-size: xx-large;
+	font-weight: bold;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.nosotros2 {
+	background-image: url("images/umg.png");
+	background-color: rgb(41, 114, 182);
+	background-size: 30%;
+	background-position-x: left;
+	background-position-y: center;
+	min-height: 600px;
+}
+.nosotros-articulo {
+	width: 50%;
+	margin-left: 50%;
+	text-align: right;
+	display: flex;
+	flex-direction: column;
+	justify-items: right;
+}
+
+.nosotros2 p {
+	min-height: 50%;
+	font-size: xx-large;
+	font-weight: bold;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	text-align: justify;
+}
+
+.nosotros2 h2 {
+	min-height: 50%;
+	font-size: xx-large;
+	font-weight: bold;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	text-align: center;
+}
+.nosotros3 h2 {
+	min-height: 50%;
+	font-size: xx-large;
+	font-weight: bold;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	text-align: center;
+}
+
+.nosotros3 {
+	background-image: url("images/umg4.jpg");
+	background-size: cover;
+	min-height: 600px;
+}
+
+.nosotros3-articulo1 {
+	/*background-color: #fff;*/
+	background-size: 30%;
+	background-position-x: left;
+	background-position-y: center;
+	min-height: 600px;
+}
+
+.nosotros3-equipo {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+}
+
+.nosotros3-equipo div {
+	width: 20%;
+	height: 500px;
+	display: flex;
+	flex-direction: row;
+	justify-content: left;
+}
+
+.nosotros3-equipo img {
+	border: 1px solid #000;
+	width: 85%;
+	height: 100%;
+}
+
+.footer-1 {
+	margin-top: 3%;
+}
+.footer-sintetico {
+	margin-top: 2%;
+	padding: 2%;
+	background-color: rgb(41, 114, 182);
+	min-height: 50px;
+}
+
+.footer-sintetico p {
+	font-weight: bold;
+}
+.footer-sintetico .nav-link {
+	margin-left: auto;
+	margin-right: auto;
+	width: fit-content;
+
+	color: black;
+}
+.footer-sintetico .nav-link:hover {
+	color: white;
+	text-decoration: underline;
+}
+
+.social {
+	margin: 2%;
+	border-radius: 50%;
+	width: 70px;
+	height: 70px;
+}
