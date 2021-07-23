@@ -19,6 +19,7 @@ El cliente JAVA fue creado con la tecnologia JAVA EE 8, con funciones de Servlet
 * Busqueda de medicamentos por laboratorio farmaceutico
 * Venta de medicamentos
 * Generacion de factura
+![](cliente_java2.gif)
 
 # Cliente .NET Frameworks
 El cliente .NET Frameworks fue creado con la tecnologia .Net Frameworks 4.8.
@@ -29,3 +30,4 @@ El cliente .NET Frameworks fue creado con la tecnologia .Net Frameworks 4.8.
 * Busqueda de medicamentos por nombre
 * Busqueda de medicamentos por laboratorio farmaceutico
 * Venta de medicamentos
+![](cliente_net2.gif)
