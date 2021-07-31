@@ -33,3 +33,8 @@ El cliente .NET Frameworks fue creado con la tecnologia .Net Frameworks 4.8.
 * Venta de medicamentos
 
 ![](cliente_net2.gif)
+
+# Base de datos
+La base de datos, incluye unicamente una tabla de medicamentos, sobre la cual se aplicaron procedimientos almacenados, para facilitar la ejecucion de consultas desde el servicio web.
+
+![](db1.png)
