@@ -1,5 +1,12 @@
-# Object file
-*.o
+# csharp folders
+**/bin
+**/Release
+**/debug
+**/Debug
 
-# Ada Library Information
-*.ali
+# netbeans folders
+**/build
+
+# misc
+**/*.vs
+**/*.vscode
