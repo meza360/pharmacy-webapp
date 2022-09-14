@@ -10,3 +10,4 @@
 # misc
 **/*.vs
 **/*.vscode
+**/packages
